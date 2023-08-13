@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 const Main = () => {
     const [pokeData, setPokeData] = useState([]); // Estado para almacenar los datos de los Pokémon
     const [loading, setLoading] = useState(true); // Estado para controlar la carga de datos
-    const [url] = useState("https://pokeapi.co/api/v2/pokemon?limit=900&offset=0"); // URL de la API de Pokémon con límite de 150 Pokémon
+    const [url] = useState("https://pokeapi.co/api/v2/pokemon?limit=150&offset=0"); // URL de la API de Pokémon con límite de 150 Pokémon
     const [pokeDex, setPokeDex] = useState(); // Estado para almacenar los detalles de un Pokémon seleccionado
 
     // Función para obtener los datos de los primeros 150 Pokémon
